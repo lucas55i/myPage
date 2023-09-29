@@ -7,6 +7,23 @@
     font-family: "DM Sans", sans-serif;
 }
 
+:root {
+    --hue: 90;
+    --primary-color: hsl(var(--hue), 92%, 43%);
+    --primary-hover: hsl(var(--hue), 92%, 33%);
+    --secundary-color: hsl(0, 0%, 5%);
+    --third-color: hsla(0, 0%, 100%, 0.1);
+    --bg-color: hsl(0, 0%, 8%);
+
+    --headline: hsl(0, 0%, 100%);
+    --paragraph: hsla(0, 0%, 100%, 0.658);
+    --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+
+    font-size: 62.5%;
+
+    --nav-height: 7.2rem;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -21,8 +38,6 @@ body {
 body {
     font-size: 1.6rem;
     text-align: center;
-
     overflow: overlay;
-
     background-color: var(--bg-color);
 }
