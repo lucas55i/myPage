@@ -572,6 +572,58 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     scale: 1.07;
 }
 
+/*===== KNOWLEDGE ===============================================*/
+
+#knowledge header h2 {
+    margin-bottom: 6rem;
+}
+
+#knowledge .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#knowledge .card {
+    padding: 2.8rem;
+    text-align: left;
+
+    background: var(--secundary-color);
+
+    border-radius: 0.6rem;
+    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+
+    transition: 400ms;
+}
+
+#knowledge .card:hover {
+    background: var(--third-color);
+}
+
+#knowledge .card h3 {
+    margin-block: 1.6rem;
+}
+
+#knowledge .card img {
+    width: 10rem;
+}
+
+#knowledge h2 {
+    width: 49.7rem;
+    margin-inline: auto;
+}
+
+#knowledge .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+#knowledge .card {
+    width: 30%;
+    flex-grow: 1;
+}
+
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
 @media (min-width: 1024px) {
