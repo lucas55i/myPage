@@ -24,6 +24,20 @@
     --nav-height: 7.2rem;
 }
 
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--paragraph);
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -40,4 +54,117 @@ body {
     text-align: center;
     overflow: overlay;
     background-color: var(--bg-color);
+}
+
+.wrapper {
+    width: min(50rem, 100%);
+
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background: none;
+    border: 0.2rem solid var(--primary-color);
+
+    margin-bottom: 6rem;
+    padding: 1.4rem 3rem;
+
+    width: fit-content;
+
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    position: relative;
+
+    transition: 400ms;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border: 0.2rem solid var(--primary-hover);
+    cursor: pointer;
+}
+
+body.light-mode .button:hover {
+    filter: none;
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+social-links li {
+    height: 3rem;
+}
+
+.social-links svg {
+    margin-top: 0.3rem;
+    transition: 300ms;
+}
+
+.social-links li:nth-child(2) svg {
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.social-links svg:hover {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+body .social-links li svg path {
+    transition: 200ms;
+}
+
+body nav#navigation .social-links li:nth-child(1) svg:hover path,
+body .social-links li:nth-child(1) svg:hover path {
+  stroke: #ff377a;
+}
+
+body .social-links li:nth-child(2) svg:hover path:nth-child(2),
+body nav#navigation .social-links li:nth-child(2) svg:hover path:nth-child(2) {
+  fill: #fff;
+}
+
+body.light-mode .social-links li:nth-child(2) svg:hover path:nth-child(2),
+body.light-mode
+  nav#navigation
+  .social-links
+  li:nth-child(2)
+  svg:hover
+  path:nth-child(2) {
+  fill: #000;
+}
+
+body .social-links li:nth-child(3) svg:hover path:nth-child(2),
+body nav#navigation .social-links li:nth-child(3) svg:hover path:nth-child(2) {
+  fill: #0a66c2;
+}
+
+body .social-links li:nth-child(4) svg:hover path:nth-child(2),
+body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
+  fill: #00abf0;
 }
