@@ -158,7 +158,7 @@ body.light-mode .button:hover {
     gap: 2.5rem;
 }
 
-social-links li {
+.social-links li {
     height: 3rem;
 }
 
@@ -230,10 +230,40 @@ nav .scroll {
 }
 
 /* LOGO */
+
 a.logo {
-    font-family: sans-serif;
+    font-family: "Gemunu Libre", sans-serif;
     font-size: 3rem;
     opacity: 0.7;
+}
+
+nav#navigation a.logo {
+    color: var(--primary-color);
+}
+
+body.light-mode nav#navigation a.logo,
+body.light-mode footer a.logo {
+    font-weight: bold;
+}
+
+footer a.logo,
+nav#navigation.scroll a.logo,
+body.menu-expanded nav#navigation a.logo,
+body.light-mode.menu-expanded nav#navigation.scroll a.logo {
+    color: #fff;
+}
+
+body.menu-expanded nav#navigation a.logo {
+    opacity: 1;
+}
+
+body.light-mode nav#navigation a.logo {
+    filter: brightness(0.8);
+}
+
+body.light-mode footer a.logo,
+body.light-mode nav#navigation.scroll a.logo {
+    color: #000;
 }
 
 nav#navigation a.logo {
@@ -624,6 +654,56 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     flex-grow: 1;
 }
 
+/*===== FOOTER ===============================================*/
+
+footer {
+    background-color: var(--secundary-color);
+
+    text-align: left;
+    color: var(--paragraph);
+}
+
+footer .wrapper {
+    padding-block: 6rem;
+    border-top: 0.1rem solid var(--paragraph);
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 2.4rem;
+    opacity: 0.6;
+}
+
+footer a img:nth-child(2),
+body.light-mode footer a img:nth-child(1) {
+    display: none;
+}
+
+body.light-mode footer a img:nth-child(2) {
+    display: initial;
+}
+
+footer p {
+    line-height: 2;
+
+    margin-bottom: 3.2rem;
+}
+
+footer .social-links {
+    justify-content: flex-start;
+}
+
+footer .social-links li:nth-child(1) svg path {
+    stroke: var(--paragraph-2);
+}
+
+footer .social-links li:nth-child(2) svg path:nth-child(2),
+footer .social-links li:nth-child(3) svg path:nth-child(2),
+footer .social-links li:nth-child(4) svg path:nth-child(2) {
+    fill: var(--paragraph-2);
+}
+
+
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
 @media (min-width: 1024px) {
@@ -709,30 +789,6 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
         height: 2.3rem;
     }
 
-    /*===== HOME ==================================*/
-
-    #home h1 {
-        font-size: 3.8rem;
-    }
-
-    #home p {
-        font-size: 1.6rem;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 23.5rem;
-        }
-    }
-
-    #home .wrapper::before {
-        bottom: -2rem;
-    }
-
     /*===== ABOUT ==================================*/
 
     #about .content a:nth-child(2) {
@@ -772,5 +828,28 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     #contact .col-b::after {
         width: 10rem;
         height: 3rem;
+    }
+
+    /*===== FOOTER ======================================*/
+
+    footer .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+    }
+
+    footer .col-a {
+        align-self: center;
+    }
+
+    footer .col-b {
+        align-self: center;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer .social-links {
+        justify-content: flex-end;
     }
 }
