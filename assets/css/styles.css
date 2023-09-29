@@ -112,6 +112,7 @@ section span {
     color: var(--paragraph);
 }
 
+
 .button {
     background: none;
     border: 0.2rem solid var(--primary-color);
@@ -283,7 +284,7 @@ nav .close-menu {
 
 #backToTopButton circle {
     fill: var(--primary-color);
-  }
+}
 
 /*===== MENU-EXPANDED ==========================================*/
 
@@ -521,6 +522,55 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     fill: #00abf0;
 }
 
+/*===== About ===================================*/
+
+#about {
+    text-align: left;
+}
+
+#about .content p {
+    margin-block: 2.4rem;
+}
+
+#about .content a {
+    text-decoration: none;
+    color: var(--paragraph);
+    font-weight: bold;
+}
+
+#about .col-a {
+    margin-bottom: 6rem;
+}
+
+#about .col-b {
+    text-align: left;
+}
+
+#about img {
+    width: 38rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem black;
+    transition: 600ms;
+}
+
+#about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: "B A";
+
+    gap: 6.7rem;
+}
+
+#about .col-a {
+    align-self: center;
+}
+
+#about .col-b {
+    text-align: center;
+}
+
+#about img:hover {
+    scale: 1.07;
+}
 
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
