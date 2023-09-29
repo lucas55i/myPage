@@ -353,39 +353,6 @@ body.menu-expanded button path {
     stroke: white;
 }
 
-
-/*===== RESPONSIVO (DESKTOP) ====================================*/
-
-@media (min-width: 1024px) {
-    /*===== GERAL =======================================*/
-
-    body {
-        overflow: auto;
-    }
-
-    .wrapper {
-        width: min(112rem, 100%);
-        display: grid;
-    }
-
-    section {
-        padding-block: 13rem;
-    }
-
-    body section h2 {
-        font-size: 4rem;
-        line-height: 5.2rem;
-    }
-
-    .col-a {
-        grid-area: A;
-    }
-
-    .col-b {
-        grid-area: B;
-    }
-}
-
 /*===== NAVEGATION ==================================*/
 
 /*Reset*/
@@ -554,6 +521,38 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     fill: #00abf0;
 }
 
+
+/*===== RESPONSIVO (DESKTOP) ====================================*/
+
+@media (min-width: 1024px) {
+    /*===== GERAL =======================================*/
+
+    body {
+        overflow: auto;
+    }
+
+    .wrapper {
+        width: min(112rem, 100%);
+        display: grid;
+    }
+
+    section {
+        padding-block: 13rem;
+    }
+
+    body section h2 {
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
+    }
+}
 
 @media (max-width: 500px) {
     /*===== GERAL ==================================*/
