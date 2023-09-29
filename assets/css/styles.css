@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 :root {
@@ -65,52 +65,52 @@ body {
 
 ul {
     list-style: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     color: var(--paragraph);
-  }
-  
-  section {
+}
+
+section {
     padding-block: 10rem;
     padding-inline: 2rem;
-  }
-  
-  section h4 {
+}
+
+section h4 {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.08rem;
     color: var(--primary-color);
     text-transform: uppercase;
-  
+
     margin-bottom: 1.6rem;
-  }
-  
-  section header h2 {
+}
+
+section header h2 {
     font-size: 3rem;
     line-height: 3.9rem;
-  
+
     color: var(--primary-color);
-  }
-  
-  section h3 {
+}
+
+section h3 {
     color: var(--headline);
-  }
-  
-  section p,
-  section span {
+}
+
+section p,
+section span {
     font-weight: 400;
     font-size: 1.7rem;
     line-height: 130%;
-  
+
     color: var(--paragraph);
-  }
+}
 
 .button {
     background: none;
@@ -230,7 +230,7 @@ nav .scroll {
 
 /* LOGO */
 a.logo {
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-size: 3rem;
     opacity: 0.7;
 }
@@ -281,7 +281,12 @@ nav .close-menu {
     position: fixed;
 }
 
+#backToTopButton circle {
+    fill: var(--primary-color);
+  }
+
 /*===== MENU-EXPANDED ==========================================*/
+
 body.menu-expanded {
     overflow: hidden;
 }
@@ -382,6 +387,7 @@ body.menu-expanded button path {
 }
 
 /*===== NAVEGATION ==================================*/
+
 /*Reset*/
 nav#navigation .wrapper * {
     margin: 0;
@@ -464,6 +470,7 @@ nav#navigation .menu ul:nth-child(1) li a::after {
     content: "";
     width: 0%;
     height: 2px;
+    background-color: var(--primary-color);
 
     display: block;
 
@@ -545,4 +552,124 @@ nav#navigation.scroll .social-links li:nth-child(3) svg:hover path:nth-child(2) 
 
 nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) {
     fill: #00abf0;
+}
+
+
+@media (max-width: 500px) {
+    /*===== GERAL ==================================*/
+
+    section h4 {
+        font-size: 1.2rem;
+    }
+
+    body section h2 {
+        font-size: 2.2rem;
+    }
+
+    section h3 {
+        font-size: 1.4rem;
+    }
+
+    section p,
+    section span,
+    footer p {
+        font-size: 1.3rem;
+    }
+
+    .button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    /*===== NAVEGATION ==================================*/
+
+    nav#navigation button svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*===== MENU-EXPANDED ==================================*/
+
+    body.menu-expanded .menu ul:nth-child(1) {
+        font-size: 1.4rem;
+        gap: 2rem;
+        margin: 6rem 0 7rem;
+    }
+
+    body.menu-expanded .menu .social-links svg,
+    footer svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    body.menu-expanded .menu .social-links li:nth-child(2) svg,
+    footer .social-links li:nth-child(2) svg {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    /*===== HOME ==================================*/
+
+    #home h1 {
+        font-size: 3.8rem;
+    }
+
+    #home p {
+        font-size: 1.6rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 23.5rem;
+        }
+    }
+
+    #home .wrapper::before {
+        bottom: -2rem;
+    }
+
+    /*===== ABOUT ==================================*/
+
+    #about .content a:nth-child(2) {
+        font-size: 1.4rem;
+    }
+
+    /*===== PROJECTS ==================================*/
+
+    #projects .card {
+        padding: 2.5rem;
+    }
+
+    #projects .card img {
+        height: 15rem;
+    }
+
+    #projects .card .buttons a {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #projects .card .buttons a svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*===== CONTACT ==================================*/
+
+    #contact ul a {
+        font-size: 1.3rem;
+    }
+
+    #contact .col-b img {
+        width: 10rem;
+    }
+
+    #contact .col-b::after {
+        width: 10rem;
+        height: 3rem;
+    }
 }
