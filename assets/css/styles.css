@@ -668,6 +668,64 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
     flex-grow: 1;
 }
 
+/*===== PROJECTS ===============================================*/
+
+#projects header h2 {
+    margin-bottom: 6rem;
+}
+
+#projects .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#projects .card {
+    padding: 2.8rem;
+    text-align: left;
+
+    background: var(--secundary-color);
+
+    border-radius: 0.6rem;
+    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+
+    transition: 400ms;
+}
+
+#projects .card:hover {
+    background: var(--third-color);
+}
+
+#projects .card h3 {
+    margin-block: 1.6rem;
+}
+#projects .card ul {
+    margin-block: 1.6rem;
+}
+
+#projects .card li {
+    margin-block: 1.6rem;
+}
+#projects .card img {
+    width: 10rem;
+}
+
+#projects h2 {
+    width: 49.7rem;
+    margin-inline: auto;
+}
+
+#projects .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+#projects .card {
+    width: 30%;
+    flex-grow: 1;
+}
+
 /*===== FOOTER ===============================================*/
 
 footer {
@@ -828,6 +886,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
         width: 3rem;
         height: 3rem;
     }
+
 
     /*===== CONTACT ==================================*/
 
