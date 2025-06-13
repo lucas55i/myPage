@@ -103,6 +103,14 @@ section h3 {
     color: var(--headline);
 }
 
+section ul {
+    color: var(--headline);
+}
+
+section li {
+    color: var(--headline);
+}
+
 section p,
 section span {
     font-weight: 400;
@@ -633,7 +641,13 @@ nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) 
 #knowledge .card h3 {
     margin-block: 1.6rem;
 }
+#knowledge .card ul {
+    margin-block: 1.6rem;
+}
 
+#knowledge .card li {
+    margin-block: 1.6rem;
+}
 #knowledge .card img {
     width: 10rem;
 }
